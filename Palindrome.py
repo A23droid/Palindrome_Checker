@@ -1,10 +1,6 @@
 def is_Palindrome(string):
     if string == "":
         return "Not Palindrome"
-    
-    elif string == string[::-1]:
-        return "Palindrome"
-    
     else:
         new_str = ""
         for i in string.lower():
@@ -14,8 +10,6 @@ def is_Palindrome(string):
             return "Palindrome"
         else:
             return "Not Palindrome"
-    
+            
 s = input("Enter: ")
-
-print(is_Palindrome(s.lower()))
-
+print(is_Palindrome(s))
